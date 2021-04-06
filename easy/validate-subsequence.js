@@ -1,6 +1,9 @@
+//Given two non-empty arrays of integers, write a function that determines
+//whether the second array is a subsequence of the first one.
+
 function isValidSubsequence(array, sequence) {
-	let arrIdx = 0;
 	let seqIdx = 0;
+	let arrIdx = 0;
 	while (arrIdx < array.length && seqIdx < sequence.length) {
 		if (array[arrIdx] === sequence[seqIdx]) seqIdx++;
 		arrIdx++;
@@ -8,4 +11,4 @@ function isValidSubsequence(array, sequence) {
 	return seqIdx === sequence.length;
 }
 
-console.log('isValidSubsequence');
+isValidSubsequence(array, sequence);

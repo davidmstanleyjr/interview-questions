@@ -15,4 +15,7 @@ function bsHelper(array, target, left, right) {
 	}
 }
 
-console.log(binarySearch());
+array = [ 0, 1, 21, 33, 45, 45, 61, 71, 72, 73 ];
+target = 33;
+
+binarySearch(array, target);

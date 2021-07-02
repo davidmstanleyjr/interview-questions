@@ -11,4 +11,4 @@ function isValidSubsequence(array, sequence) {
 	return seqIdx === sequence.length;
 }
 
-isValidSubsequence(array, sequence);
+isValidSubsequence(3, 5, 4, 8, 11, 1, -1, 6);

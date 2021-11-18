@@ -8,4 +8,4 @@ function power(base, exponent) {
 	return base * power(base, exponent - 1);
 }
 
-console.log(power(3, 4));
+console.log(power(3, 5));

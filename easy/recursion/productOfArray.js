@@ -13,4 +13,4 @@ function productOfArray(arr) {
 	return arr[0] * productOfArray(arr.slice(1));
 }
 
-console.log(productOfArray([2, 3, 5, 8]));
+console.log(productOfArray([4, 5, 9, 13]));

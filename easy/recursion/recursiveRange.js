@@ -12,4 +12,4 @@ function recursiveRange(i) {
 	return i + recursiveRange(i - 1);
 }
 
-console.log(recursiveRange([9]));
+console.log(recursiveRange([3]));

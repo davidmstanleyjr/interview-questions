@@ -7,19 +7,24 @@
 // If the value is too large, move the right pointer down.
 // If you never find the value, return -1.
 
-function binarySearch(arr, elem) {
+function binarySearch(arr, val) {
+	//left pointer
 	var start = 0;
+	// right pointer
 	var end = arr.length - 1;
+	//middle pointer.
 	var middle = Math.floor((start + end) / 2);
-	while (arr[middle] !== elem && start <= end) {
-		if (elem < arr[middle]) {
+	while (arr[middle] !== val && start <= end) {
+		// if the value is less than the middle
+		if (val < arr[middle]) {
+			// the end now equals the middle minus 1
 			end = middle - 1;
 		} else {
 			start = middle + 1;
 		}
 		middle = Math.floor((start + end) / 2);
 	}
-	if (arr[middle] === elem) {
+	if (arr[middle] === val) {
 		return middle;
 	}
 	return -1;
